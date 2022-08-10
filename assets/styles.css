@@ -735,7 +735,7 @@ nav {
 }
 
 #projectstitle {
-	min-width: 80%;
+	width: 70%;
 }
 
 #projectstitle::after {
