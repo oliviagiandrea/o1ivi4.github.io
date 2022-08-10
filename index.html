@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Olivia Giandrea's Portfolio">
+		<meta name="keywords" content="Olivia Giandrea, Wellesley College">
+
+    <link rel="stylesheet" href="assets/styles.css">
+  	<link rel="icon" href="assets/img/logo.svg">
+		<link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+		<title>Olivia Giandrea</title>
+	</head>
+	<body>
+		<!--Navigation Bar-->
+		<nav class="primary-header flex">
+			<div>
+				<img src="assets/img/logo.svg" class="logo"/>
+			</div>
+			<!-- "menu" is read by screen reader, won't be seen by user -->
+			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+				<span class="sr-only">Menu</span>
+			</button>
+				<ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+						<li class="nav-link active">
+								<a href="#home-section">
+										<span aria-hidden="true">00</span>HOME
+								</a>
+						</li>
+						<li class="nav-link">
+								<a href="#about-section">
+										<span aria-hidden="true">01</span>ABOUT
+								</a>
+						</li>
+						<li class="nav-link">
+								<a href="#education-section">
+										<span aria-hidden="true">02</span>EXPERIENCE
+								</a>
+						</li>
+						<li class="nav-link">
+								<a href="#project-section">
+										<span aria-hidden="true">03</span>PROJECTS
+								</a>
+						</li>
+						<li class="nav-link resumebtn">
+							<a href="resume.pdf" target="_blank" id="resume">RESUME</a>
+						</li>
+				</ul>
+		</nav>
+
+		<div class="page-content">
+			<!--Home Page-->
+			<section id="home-section">
+				<div class="container row twinkles">
+					<div class="container column" id="landing-text">
+						<h1 class="title">OLIVIA GIANDREA</h1>
+						<img src="assets/img/portrait.svg" id="portrait"><br/>
+						<div class="description">
+							<p>Senior at Wellesley College.</p>
+							<p>SWE Intern at Momentive.ai.</p>
+							<p>Aspiring Fullstack Engineer.</p><br/>
+						</div>
+						<!-- <div class="portrait">
+							<img src="img/top_orbit.svg" id="toporbit-icon">
+							<img src="img/dark_profile.png" id="profile-icon">
+							<img src="img/planets.svg" id="planets-icon">
+							<img src="img/bottom_orbit.svg" id="bottomorbit-icon">
+						</div> -->
+						<!-- <p id="app"></p> -->
+						<a href="#about-section" class="button">LEARN MORE</a>
+					</div>
+				</div>
+				<!-- <a href="#about-section" class="arrow"></a> -->
+			</section>
+
+			<!--About Section-->
+			<section id="about-section">
+				<div class="about-container">
+					<div class="about-item-left about-text">
+						<div id="about-text">
+							<h1 class="subtitle">01 .  ABOUT ME</h1>
+							<p id="about-p">Hello!<br/><br/>
+								I'm a senior at 
+									<span class="blue">Wellesley College</span>, 
+									although I'll be taking a semester “abroad” at 
+									<span class="green">Darmouth College </span>
+								this spring, majoring in Computer Science. I'm 
+								also currently interning at 
+									<span class="yellow">Momentive.ai </span> 
+							  as a Software Engineer Intern on the Content 
+								Engineering Team. 
+							<br/><br/>
+								In my free time, I enjoy baking, weightlifting, 
+								stargazing, and hiking. I specialize in 
+								<span class="purple">web development </span> 
+								with HTML, CSS, and JavaScript (using vanilla, 
+								React.js, JQuery, and/or Node.js). I'm currently 
+								exploring the MERN stack by building a recipe 
+								website and developing a new 300-level class for Wellesley.
+							<br/><br/>
+							Thanks for stopping by!</p>
+						</div>
+					</div>
+					<div class="about-item-right">
+						<div class="about-img-wrapper">
+							<img src="assets/img/hiking.jpg" id="about-img">
+							<img src="assets/img/doodles.svg" id="doodles">
+							<hr/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Education Section-->
+			<section id="edu-section">
+				<div class="edu-container">
+					<div class="e-item-left edu-text">
+						<div id="edu-text">
+							<h1 class="subtitle" id="edu">02 .  EDUCATION/EXPERIENCE</h1>
+							<div class="education-container">
+								<div class="edu-wrap">
+									<ul class="edu-nav">
+										<li class="selected" id="edu1name">WELLESLEY COLLEGE</li>
+										<li id="edu2name">MIDDLEBURY COLLEGE</li>
+										<li id="edu3name">HIGH SCHOOL</li>
+									</ul>
+									<div class="edu-detail edu1">
+										<p>B.A. Computer Science 
+											<span class="purple">&#8674; Wellesley College</span>
+										</p>
+										<p class="timeline">
+											Aug 2020 - Present<br/>
+											Expected Graduation: June 2023
+										</p>
+										<ul>
+											<li>GPA: 3.94</li>
+											<li>Courses from Wellesley College and MIT</li>
+											<ul class="nested-list">
+												<li>CS111 - Programming and Problem Solving</li>
+												<li>CS230 - Data Structures</li>
+												<li>CS231 - Fundamental Algorithms</li>
+												<li>CS234 - Data Analytics and Visualization</li>
+												<li><span class="blue">CS235 - Theory of Computation</span></li>
+												<li>CS240 - Foundations of Computer Systems</li>
+												<li>CS304 - Databases with Web Interfaces</li>
+												<li><span class="blue">CS350 - Independent Study: Web Development</span></li>
+												<li>CS350H - Independent Study: Web Development</li>
+												<li>MATH115 - Calculus I</li>
+												<li>MATH116 - Calculus II</li>
+												<li>MATH225 - Combinatorics and Graph Theory</li>
+												<li><span class="blue">6.1040 - Software Studio <span class="red">(MIT)</span></span></li>
+											</ul>
+										</ul>
+										<p><span class="blue inprogress">(blue text = in progress)</span></p>
+									</div>
+								</div>
+								<img src="assets/img/starbanner.svg" class="starbanner"/>
+								<div class="exp-wrap">
+									<ul class="exp-nav">
+										<li class="selected" id="exp1name">MOMENTIVE</li>
+										<li id="exp2name">WELLESLEY COLLEGE</li>
+										<li id="exp3name">ENERCON</li>
+									</ul>
+									<div class="exp-detail" id="exp1">
+										<p>Software Engineer Intern
+											<span class="purple">&#8674; Momentive.ai</span>
+										</p>
+										<p class="timeline">
+											June 2022 - Present, Remote<br/>
+										</p>
+										<ul>
+											<li>
+												Worked on the Content Engineering Team to build tools 
+												and technologies with  HTML, CSS, and Javascript (React) 
+												to manage content on company websites. 
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="e-item-right">
+						<h1 id="skillstitle">SKILLS</h1>
+						<div class="skills">
+							<p>HTML5/CSS3</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 90%"></div>
+							</div>
+							<p class="skillpercent">90%</p>
+							<p>JavaScript</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 50%"></div>
+							</div>
+							<p class="skillpercent">50%</p>
+							<p>Python</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 75%"></div>
+							</div>
+							<p class="skillpercent">75%</p>
+							<p>SQL/MySQL</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 75%"></div>
+							</div>
+							<p class="skillpercent">75%</p>
+							<p>MongoDB</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 25%"></div>
+							</div>
+							<p class="skillpercent">25%</p>
+							<p>Unix</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 100%"></div>
+							</div>
+							<p class="skillpercent">100%</p>
+							<p>C#</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 25%"></div>
+							</div>
+							<p class="skillpercent" style="margin-bottom: 1rem;">25%</p>
+
+							<p>Git</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 100%"></div>
+							</div>
+							<p class="skillpercent">100%</p>
+							<p>Node.js</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 50%"></div>
+							</div>
+							<p class="skillpercent">50%</p>
+							<p>React.js</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 25%"></div>
+							</div>
+							<p class="skillpercent">25%</p>
+							<p>Express</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 50%"></div>
+							</div>
+							<p class="skillpercent">50%</p>
+							<p>Flask</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 100%"></div>
+							</div>
+							<p class="skillpercent">100%</p>
+							<p>Pandas</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 75%"></div>
+							</div>
+							<p class="skillpercent">75%</p>
+							<p>Figma</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 80%"></div>
+							</div>
+							<p class="skillpercent" style="margin-bottom: 1rem;">80%</p>
+
+							<p>English</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 100%"></div>
+							</div>
+							<p class="skillpercent">100%</p>
+							<p>Japanese</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 50%"></div>
+							</div>
+							<p class="skillpercent">50%</p>
+							<p>French</p>
+							<div class="skillbar">
+								<div class="skilllevel" style="width: 75%"></div>
+							</div>
+							<p class="skillpercent">75%</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Project Section-->
+			<section id="project-section">
+				<h1 class="subtitle" id="projectstitle">03 .  PROJECTS</h1>
+				<div class="container row" id="button-section">
+					<button class="filter-button active" onclick="filterSelection('all')">All</button>
+					<button class="filter-button" onclick="filterSelection('python')">Python</button>
+					<button class="filter-button" onclick="filterSelection('data')">Data</button>
+					<button class="filter-button" onclick="filterSelection('web')">Web Dev</button>
+				</div>
+				<div class="container row" id="proj-cards">
+					<a class="proj-card data" href="edtwt.html" target="_blank">
+					  <img class="proj-img" src="assets/img/twitter.png"/>
+					  <div class="proj-description container column">
+							<div class="img-description">
+								<h2>#edtwt Sentiment Analysis</h2>
+								<p>Conducted <b>sentiment analysis</b> on tweets from Twitter's eating disorder communities using <b>Twitter's official API</b>.</p>
+								<br>
+								<i>Python, sklearn, Pandas</i>
+							</div>
+					  </div>
+					</a>
+					<a class="proj-card web" href="https://github.com/o1ivi4/o1ivi4.github.io" target="_blank">
+					  <img class="proj-img" src="assets/img/portfolio.png"/>
+					  <div class="proj-description container column">
+							<div class="img-description">
+								<h2>Portfolio Website Repo</h2>
+								<p>Built entirely from scratch using <b>HTML, CSS,</b> and <b>JavaScript</b>. All icons drawn in <b>Procreate</b>.</p>
+								<br>
+								<!-- <a href="https://www.figma.com/file/fFAVNBBMv3G9WLPb6JcNaW/portfolio?node-id=0%3A1" target="_blank">Figma File Link</a> -->
+								<i>HTML, CSS, JavaScript, Figma</i>
+							</div>
+					  </div>
+					</a>
+					<a class="proj-card web" href="https://www.wellesleyhacks.org/" target="_blank">
+					  <img class="proj-img" src="assets/img/whack.png"/>
+					  <div class="proj-description container column">
+							<div class="img-description">
+								<h2>WHACK 2022 Website</h2>
+								<!-- <p>Single-handedly developed Wellesley College's annual Hackathon's website from our design team's <a href="https://www.figma.com/file/R0IQUDvsGugFiMkjsS5uaF/Design-tech?node-id=417%3A583">Figma file</a> (pw: "whack").</p> -->
+								<p>Developed Wellesley College's annual <b>Hackathon website</b> from our design team's Figma file.</p>
+								<br>
+								<i>HTML, CSS, JavaScript, Bootstrap</i>
+							</div>
+					  </div>
+					</a>
+					<!-- <a class="proj-card data show">
+					  <img class="proj-img" src="assets/img/twitter.png"/>
+					  <div class="proj-description container column">
+							<div class="img-description">
+								<h2>#edtwt Sentiment Analysis</h2>
+								<p>Conducted <b>sentiment analysis</b> on tweets from eating disorder communities on Twitter using <b>Twitter's official API</b>.</p>
+								<br>
+								<i>Python, sklearn, Pandas</i>
+							</div>
+					  </div>
+					</a> -->
+				</div>
+			</section>
+
+			<!--Footer/Contact-->
+			<section class="container column" id="footer">
+				<div class="container row" id="social-container">
+					<a href="https://www.linkedin.com/in/oliviagiandrea/" target="_blank">LinkedIn</a>
+					<span>•</span>
+					<a href="https://github.com/o1ivi4" target="_blank">Github</a>
+					<span>•</span>
+					<a href="mailto:olivia.giandrea@gmail.com" target="_blank">Email</a>
+				</div>
+			</section>
+		</div>
+
+    <script src="assets/scripts.js"></script>
+	</body>
+</html>
