@@ -252,7 +252,7 @@ nav {
 	}
 
 	.mobile-nav-toggle[aria-expanded="true"] {
-		background-image: url("assets/img/x.svg");
+		background-image: url("img/x.svg");
 		background-size: 2rem 2rem;
 		width: 2rem;
 		height: 2rem;
@@ -293,12 +293,12 @@ nav {
 	justify-content: center;
 	height: calc(100vh - 100px);
 	padding-top: 2em;
-	background-image: url('assets/img/stars.png'), url('assets/img/stars2.png'), url('assets/img/stars3.png');
+	background-image: url('img/stars.png'), url('img/stars2.png'), url('img/stars3.png');
 	background-size: contain;
 }
 
 .twinkles {
-	background: url('assets/img/twink.svg') repeat top center;
+	background: url('img/twink.svg') repeat top center;
 	z-index: 1;
 
 	-moz-animation: move-twink-back 200s linear infinite;
@@ -581,7 +581,7 @@ nav {
 
 .edu-detail ul,
 .exp-detail ul {
-	list-style-image: url('assets/img/star_point.svg');
+	list-style-image: url('img/star_point.svg');
 	padding-inline-start: 0.75rem;
 }
 
@@ -607,7 +607,7 @@ nav {
 }
 
 #skillstitle {
-	background: url('assets/img/planet.svg') left center / 70px no-repeat;
+	background: url('img/planet.svg') left center / 70px no-repeat;
 	padding-left: 75px;
 }
 
