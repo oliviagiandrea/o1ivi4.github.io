@@ -203,6 +203,10 @@ nav {
 }
 
 @media (max-width: 35em) {
+	.primary-header {
+		background-color: #232935;
+	}
+
 	.primary-navigation {
 		--gap: 2em;
 
@@ -902,5 +906,13 @@ nav {
 @media (max-width: 35em) {
 	.contact-wrap {
 		max-width: 80%;
+	}
+
+	#copyright-container {
+		padding-bottom: 3rem;
+	}
+
+	#contact-section {
+		min-height: calc(100vh - 6em);
 	}
 }
