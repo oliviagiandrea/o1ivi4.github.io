@@ -15,6 +15,16 @@
 		<script src="https://kit.fontawesome.com/4266217451.js" crossorigin="anonymous"></script>
 
     <style>
+      @media print {
+        #head-section,
+        #edu-section, 
+        #skills-section,
+        #exp-section,
+        #comm-section {
+          width: 95% !important;
+        }
+      }
+
       body {
         scroll-behavior: smooth;
         font-style: normal;
@@ -23,7 +33,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        page-break-after:avoid;
       }
 
       h1 {
@@ -63,7 +72,7 @@
       #skills-section,
       #exp-section,
       #comm-section {
-        width: 90%;
+        width: 60%;
         margin-bottom: 0.5rem;
       }
 
@@ -93,7 +102,7 @@
       }
 
       .bullet {
-        margin-bottom: 5px;
+        margin-bottom: 4px;
       }
 
       ul {
@@ -262,7 +271,7 @@
           </div>
       </div>
 
-      <div id="comm-section">
+      <div id="comm-section" style="margin-bottom: 3rem;">
         <h2>Community/Campus Involvement</h2>
         <div class="bullet" style="margin-top: 5px;">
           <div class="subtitle">
