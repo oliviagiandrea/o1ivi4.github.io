@@ -112,6 +112,7 @@ var container = document.getElementById("copyright-container");
 
 var copyright = document.getElementById("copyright");
 var icons = container.getElementsByClassName("fa-solid");
+
 copyright.addEventListener("mouseover", function() {
   copyright.style.setProperty("color", "#b18cec");
   for (var i = 0; i < icons.length; i++) {

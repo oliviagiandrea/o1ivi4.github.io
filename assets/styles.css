@@ -304,7 +304,12 @@ nav {
 	background-size: contain;
 }
 
+#home-wrap {
+	min-width: 100%;
+}
+
 .twinkles {
+	width: 100%;
 	background: url('img/twink.svg') repeat top center;
 	z-index: 1;
 
@@ -552,7 +557,9 @@ nav {
 }
 
 #edu-nav li:hover, 
-#exp-nav li:hover {
+#edu-nav li:focus,
+#exp-nav li:hover,
+#exp-nav li:focus {
 	cursor: pointer;
 	color: #f7f4e9;
 }
@@ -783,7 +790,7 @@ nav {
 .filter-button.active {
 	background-color: #f7f4e9;
 	border-color: #f7f4e9;
-	color: #b18cec;
+	color: #232935;
 }
 
 .proj-cards {
@@ -856,7 +863,7 @@ nav {
 }
 
 .img-description i {
-	font-size: 10px;
+	font-size: 10pt;
 }
 
 .img-description:hover {

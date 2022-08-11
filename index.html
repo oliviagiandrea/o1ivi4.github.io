@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
 		<!--Navigation Bar-->
 		<nav class="primary-header flex">
 			<a href="#about-section">
-				<img src="assets/img/logo.svg" class="logo"/>
+				<img src="assets/img/logo.svg" alt="Navbar Star Logo" class="logo"/>
 			</a>
 			<!-- "menu" is read by screen reader, won't be seen by user -->
 			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -48,7 +48,7 @@
 						</a>
 				</li>
 					<li class="nav-link resumebtn">
-						<a href="assets/resume.pdf" target="_blank" id="resume">RESUME</a>
+						<a href="assets/resume.html" target="_blank" id="resume">RESUME</a>
 					</li>
 				</ul>
 		</nav>
@@ -56,16 +56,18 @@
 		<div class="page-content">
 			<!--Home Page-->
 			<section id="home-section">
-				<div class="container row twinkles">
-					<div class="container column" id="landing-text">
-						<h1 class="title">OLIVIA GIANDREA</h1>
-						<img src="assets/img/portrait.svg" id="portrait"><br/>
-						<div class="description">
-							<p>Senior at Wellesley College.</p>
-							<p>SWE Intern at Momentive.ai.</p>
-							<p>Aspiring Fullstack Engineer.</p><br/>
+				<div class="container row twinkles" id="home-wrap">
+					<div class="container row">
+						<div class="container column" id="landing-text">
+							<h1 class="title">OLIVIA GIANDREA</h1>
+							<img src="assets/img/portrait.svg" alt="Self-Portrait Drawing" id="portrait"><br/>
+							<div class="description">
+								<p>Senior at Wellesley College.</p>
+								<p>SWE Intern at Momentive.ai.</p>
+								<p>Aspiring Fullstack Engineer.</p><br/>
+							</div>
+							<a href="#about-section" class="button">LEARN MORE</a>
 						</div>
-						<a href="#about-section" class="button">LEARN MORE</a>
 					</div>
 				</div>
 			</section>
@@ -100,8 +102,8 @@
 					</div>
 					<div class="about-item-right">
 						<div class="about-img-wrapper">
-							<img src="assets/img/hiking.jpg" id="about-img">
-							<img src="assets/img/doodles.svg" id="doodles">
+							<img src="assets/img/hiking.jpg" alt="Self-Portrait Photo" id="about-img">
+							<img src="assets/img/doodles.svg" alt="Planet Drawings" id="doodles">
 							<hr/>
 						</div>
 					</div>
@@ -117,9 +119,9 @@
 							<div class="education-container">
 								<div class="edu-wrap">
 									<ul id="edu-nav">
-										<li class="edubtn edu1 selected" onclick="filterEdu('edu1')">WELLESLEY COLLEGE</li>
-										<li class="edubtn edu2" onclick="filterEdu('edu2')">MIDDLEBURY COLLEGE</li>
-										<li class="edubtn edu3" onclick="filterEdu('edu3')">HIGH SCHOOL</li>
+										<li class="edubtn edu1 selected" tabindex="0" onclick="filterEdu('edu1')">WELLESLEY COLLEGE</li>
+										<li class="edubtn edu2" tabindex="0" onclick="filterEdu('edu2')">MIDDLEBURY COLLEGE</li>
+										<li class="edubtn edu3" tabindex="0" onclick="filterEdu('edu3')">HIGH SCHOOL</li>
 									</ul>
 									<div class="edu-detail edu1 show">
 										<p>B.A. Computer Science 
@@ -167,12 +169,12 @@
 										</ul>
 									</div>
 								</div>
-								<img src="assets/img/starbanner.svg" class="starbanner"/>
+								<img src="assets/img/starbanner.svg" alt="Star Banner" class="starbanner"/>
 								<div class="exp-wrap">
 									<ul id="exp-nav">
-										<li class="expbtn exp1 selected" onclick="filterExp('exp1')">MOMENTIVE</li>
-										<li class="expbtn exp2" onclick="filterExp('exp2')">WELLESLEY COLLEGE</li>
-										<li class="expbtn exp3" onclick="filterExp('exp3')">ENERCON</li>
+										<li class="expbtn exp1 selected" tabindex="0" onclick="filterExp('exp1')">MOMENTIVE</li>
+										<li class="expbtn exp2" tabindex="0" onclick="filterExp('exp2')">WELLESLEY COLLEGE</li>
+										<li class="expbtn exp3" tabindex="0" onclick="filterExp('exp3')">ENERCON</li>
 									</ul>
 									<div class="exp-detail exp1 show">
 										<p>Software Engineer Intern
@@ -361,7 +363,7 @@
 				</div>
 				<div class="container row" id="proj-cards">
 					<a class="proj-card data" href="assets/edtwt.html" target="_blank">
-					  <img class="proj-img" src="assets/img/twitter.png"/>
+					  <img class="proj-img" alt="Twitter API Project" src="assets/img/twitter.png"/>
 					  <div class="proj-description container column">
 							<div class="img-description">
 								<h2>#edtwt Sentiment Analysis</h2>
@@ -372,7 +374,7 @@
 					  </div>
 					</a>
 					<a class="proj-card web" href="https://github.com/o1ivi4/o1ivi4.github.io" target="_blank">
-					  <img class="proj-img" src="assets/img/portfolio.png"/>
+					  <img class="proj-img" alt="Portfolio Project" src="assets/img/portfolio.png"/>
 					  <div class="proj-description container column">
 							<div class="img-description">
 								<h2>Portfolio Website Repo</h2>
@@ -384,7 +386,7 @@
 					  </div>
 					</a>
 					<a class="proj-card web" href="https://www.wellesleyhacks.org/" target="_blank">
-					  <img class="proj-img" src="assets/img/whack.png"/>
+					  <img class="proj-img" alt="WHACK Project" src="assets/img/whack.png"/>
 					  <div class="proj-description container column">
 							<div class="img-description">
 								<h2>WHACK 2022 Website</h2>
