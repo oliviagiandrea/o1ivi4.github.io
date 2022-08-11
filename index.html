@@ -12,42 +12,44 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+		<!-- load fontawesome icons! :D -->
+		<script src="https://kit.fontawesome.com/4266217451.js" crossorigin="anonymous"></script>
 		<title>Olivia Giandrea</title>
 	</head>
 	<body>
 		<!--Navigation Bar-->
 		<nav class="primary-header flex">
-			<div>
+			<a href="#about-section">
 				<img src="assets/img/logo.svg" class="logo"/>
-			</div>
+			</a>
 			<!-- "menu" is read by screen reader, won't be seen by user -->
 			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
 				<span class="sr-only">Menu</span>
 			</button>
 				<ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-						<li class="nav-link active">
-								<a href="#home-section">
-										<span aria-hidden="true">00</span>HOME
-								</a>
-						</li>
-						<li class="nav-link">
-								<a href="#about-section">
-										<span aria-hidden="true">01</span>ABOUT
-								</a>
-						</li>
-						<li class="nav-link">
-								<a href="#edu-section">
-										<span aria-hidden="true">02</span>EXPERIENCE
-								</a>
-						</li>
-						<li class="nav-link">
-								<a href="#project-section">
-										<span aria-hidden="true">03</span>PROJECTS
-								</a>
-						</li>
-						<li class="nav-link resumebtn">
-							<a href="assets/resume.pdf" target="_blank" id="resume">RESUME</a>
-						</li>
+					<li class="nav-link">
+							<a href="#about-section">
+									<span aria-hidden="true">01</span>ABOUT
+							</a>
+					</li>
+					<li class="nav-link">
+							<a href="#edu-section">
+									<span aria-hidden="true">02</span>EXPERIENCE
+							</a>
+					</li>
+					<li class="nav-link">
+							<a href="#project-section">
+									<span aria-hidden="true">03</span>PROJECTS
+							</a>
+					</li>
+					<li class="nav-link">
+						<a href="#contact-section">
+								<span aria-hidden="true">04</span>CONTACT
+						</a>
+				</li>
+					<li class="nav-link resumebtn">
+						<a href="assets/resume.pdf" target="_blank" id="resume">RESUME</a>
+					</li>
 				</ul>
 		</nav>
 
@@ -114,12 +116,12 @@
 							<h1 class="subtitle" id="edu">02 .  EDUCATION/EXPERIENCE</h1>
 							<div class="education-container">
 								<div class="edu-wrap">
-									<ul class="edu-nav">
-										<li class="selected" id="edu1name">WELLESLEY COLLEGE</li>
-										<li id="edu2name">MIDDLEBURY COLLEGE</li>
-										<li id="edu3name">HIGH SCHOOL</li>
+									<ul id="edu-nav">
+										<li class="edubtn edu1 selected" onclick="filterEdu('edu1')">WELLESLEY COLLEGE</li>
+										<li class="edubtn edu2" onclick="filterEdu('edu2')">MIDDLEBURY COLLEGE</li>
+										<li class="edubtn edu3" onclick="filterEdu('edu3')">HIGH SCHOOL</li>
 									</ul>
-									<div class="edu-detail edu1">
+									<div class="edu-detail edu1 show">
 										<p>B.A. Computer Science 
 											<span class="purple">&#8674; Wellesley College</span>
 										</p>
@@ -148,26 +150,104 @@
 										</ul>
 										<p><span class="blue inprogress">(blue text = in progress)</span></p>
 									</div>
+									<div class="edu-detail edu2">
+										<p>Summer School of Japanese
+											<span class="purple">&#8674; Middlebury College</span>
+										</p>
+										<p class="timeline">Summer 2019</p>
+										<ul>
+											<li>GPA: 4.0</li>
+										</ul>
+									</div>
+									<div class="edu-detail edu3">
+										<p><span class="purple">Greely High School</span></p>
+										<p class="timeline">Aug 2016 - June 2020</p>
+										<ul>
+											<li>GPA: 95.727</li>
+										</ul>
+									</div>
 								</div>
 								<img src="assets/img/starbanner.svg" class="starbanner"/>
 								<div class="exp-wrap">
-									<ul class="exp-nav">
-										<li class="selected" id="exp1name">MOMENTIVE</li>
-										<li id="exp2name">WELLESLEY COLLEGE</li>
-										<li id="exp3name">ENERCON</li>
+									<ul id="exp-nav">
+										<li class="expbtn exp1 selected" onclick="filterExp('exp1')">MOMENTIVE</li>
+										<li class="expbtn exp2" onclick="filterExp('exp2')">WELLESLEY COLLEGE</li>
+										<li class="expbtn exp3" onclick="filterExp('exp3')">ENERCON</li>
 									</ul>
-									<div class="exp-detail" id="exp1">
+									<div class="exp-detail exp1 show">
 										<p>Software Engineer Intern
 											<span class="purple">&#8674; Momentive.ai</span>
 										</p>
 										<p class="timeline">
-											June 2022 - Present, Remote<br/>
+											June 2022 - Present<br/>
 										</p>
 										<ul>
 											<li>
 												Worked on the Content Engineering Team to build tools 
 												and technologies with  HTML, CSS, and Javascript (React) 
 												to manage content on company websites. 
+											</li>
+										</ul>
+									</div>
+									<div class="exp-detail exp2">
+										<p>CS Tutor
+											<span class="purple">&#8674; Wellesley College</span>
+										</p>
+										<p class="timeline">
+											Sept 2021 - Present<br/>
+										</p>
+										<ul>
+											<li>
+												Taught students Python and problem solving fundamentals 
+												(CS 111) and HTML/CSS/front-end design fundamentals 
+												(CS 220) in weekly shadowed lab sections/lectures and 
+												independent office hours by explaining concepts, guiding 
+												debugging processes, and clarifying questions. 
+											</li>
+										</ul>
+									</div>
+									<div class="exp-detail exp3">
+										<p>Software Systems Developer Intern
+											<span class="purple">&#8674; Enercon Technologies</span>
+										</p>
+										<p class="timeline">
+											Dec 2020 - June 2022<br/>
+										</p>
+										<ul>
+											<li>
+												Redesigned and redeveloped company intranet site with a 
+												modernized framework using HTML, CSS, JavaScript, C#, 
+												SQL stored procedures, and integrated third-party SDKs 
+												to increase floor productivity. 
+											</li>
+											<li>
+												Built a "bulletin board" application interface for HR 
+												employees to easily upload and display content, such 
+												as company announcements, weekly/daily completed build 
+												statistics, and safety information. 
+											</li>
+											<li>
+												Automated validation of manufacturing software, reducing 
+												5 weeks of labor to under 23 minutes. 
+											</li>
+											<li>
+												Updated legacy apps by translating functions from VB6 
+												to Windows Forms (C#). 
+											</li>
+											<li>
+												Created a variety of Windows Forms (C#, SQL stored 
+												procedures) to offer employees easier methods of 
+												interacting with data. 
+											</li>
+											<li>
+												Collaborated with 3 other developers to automate 
+												processes and maintain company infrastructure using 
+												SQL stored procedures, APIs, and custom applications 
+												(C# or HTML, CSS, JavaScript). 
+											</li>
+											<li>
+												Documented system modifications with Github/BitBucket 
+												to maintain source control. 
 											</li>
 										</ul>
 									</div>
@@ -274,9 +354,10 @@
 			<section id="project-section">
 				<h1 class="subtitle" id="projectstitle">03 .  PROJECTS</h1>
 				<div class="container row" id="button-section">
-					<button class="filter-button active" onclick="filterSelection('all')">All</button>
-					<button class="filter-button" onclick="filterSelection('data')">Data</button>
-					<button class="filter-button" onclick="filterSelection('web')">Web Dev</button>
+					<button class="filter-button button active" onclick="filterSelection('all')">ALL</button>
+					<!-- <button class="filter-button button" onclick="filterSelection('python')">PYTHON</button> -->
+					<button class="filter-button button" onclick="filterSelection('data')">DATA</button>
+					<button class="filter-button button" onclick="filterSelection('web')">WEB DEV</button>
 				</div>
 				<div class="container row" id="proj-cards">
 					<a class="proj-card data" href="assets/edtwt.html" target="_blank">
@@ -316,14 +397,31 @@
 				</div>
 			</section>
 
+			<!--Contact Page-->
+			<section id="contact-section">
+				<div class="container column contact-wrap">
+					<h1 class="subtitle" id="contacttitle">04 .  CONTACT</h1>
+					<p style="padding-bottom: 1rem; text-align: center;">
+						Questions? Comments? Found a bug? Want to work together?<br>
+						Let's connect! 
+					</p>
+					<div class="container row">
+						<a href="mailto:olivia.giandrea@gmail.com" class="button">EMAIL</a>
+						<a href="https://www.linkedin.com/in/oliviagiandrea/" target="_blank" class="button">LINKEDIN</a>
+						<a href="https://github.com/o1ivi4/" target="_blank" class="button">GITHUB</a>
+					</div>
+				</div>
+			</section>
+
 			<!--Footer/Contact-->
 			<section class="container column" id="footer">
-				<div class="container row" id="social-container">
-					<a href="https://www.linkedin.com/in/oliviagiandrea/" target="_blank">LinkedIn</a>
-					<span>•</span>
-					<a href="https://github.com/o1ivi4" target="_blank">Github</a>
-					<span>•</span>
-					<a href="mailto:olivia.giandrea@gmail.com" target="_blank">Email</a>
+				<div class="container row" id="copyright-container">
+					<a href="https://github.com/o1ivi4" target="_blank" id="copyright">
+						<i class="fa-solid fa-pen-ruler"></i>, 
+						<i class="fa-solid fa-code"></i>, and 
+						<i class="fa-solid fa-rocket"></i>
+						by Olivia Giandrea
+					</a>
 				</div>
 			</section>
 		</div>

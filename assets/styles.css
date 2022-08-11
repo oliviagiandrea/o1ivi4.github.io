@@ -166,7 +166,7 @@ nav {
 .logo {
 	height: 30px;
 	width: 30px;
-	padding-top: 9px;
+	padding-top: 3px;
 	margin-left: 1rem;
 }
 
@@ -176,6 +176,7 @@ nav {
 	width: 100%;
 	box-shadow: none;
 	background: hsl(0 0% 0% / 0.75);
+	z-index: 100;
 }
 
 .mobile-nav-toggle {
@@ -192,6 +193,7 @@ nav {
 	.primary-header {
 		background: rgba(35, 41, 53);
 		backdrop-filter: blur(1rem);
+		z-index: 100;
 	}
 }
 
@@ -216,7 +218,7 @@ nav {
 
 	.primary-navigation[data-visible="true"] {
 		transform: translateX(0%);
-		background: hsl(0 0% 0% / 0.75);
+		background: hsl(0 0% 0% / 0.85);
 		height: 100vh;
 	} 
 
@@ -233,7 +235,7 @@ nav {
 	}
 
 	.logo {
-		margin-top: 0.5rem;
+		margin-top: 1rem;
 		margin-left: 1.75rem;
 	}
 
@@ -247,8 +249,8 @@ nav {
 		border: 0;
 		width: 2rem;
 		height: 2rem;
-		top: 1rem;
-		right: 2rem;
+		top: 1.5rem;
+		right: 2.25rem;
 	}
 
 	.mobile-nav-toggle[aria-expanded="true"] {
@@ -272,6 +274,7 @@ nav {
 		--gap: clamp(1rem, 5vw, 1.5rem);
 		padding-block: 2rem;
 		padding-inline: 1rem;
+		padding-top: 2.25rem;
 	}
 }
 
@@ -526,8 +529,8 @@ nav {
 	width: calc(100% - 270px);
 }
 
-.edu-nav,
-.exp-nav {
+#edu-nav,
+#exp-nav {
 	list-style: none;
 	position: relative;
 	line-height: 2rem;
@@ -539,8 +542,19 @@ nav {
 	font-size: 12pt;
 }
 
-.edu-nav::before,
-.exp-nav::before {
+#edu-nav li, 
+#exp-nav li {
+	color: #98a3c5;
+}
+
+#edu-nav li:hover, 
+#exp-nav li:hover {
+	cursor: pointer;
+	color: #f7f4e9;
+}
+
+#edu-nav::before,
+#exp-nav::before {
 	position: absolute;
 	z-index: 1;
 	left: 0;
@@ -555,18 +569,18 @@ nav {
 	border-spacing: 10px;
 }
 
-.edu-nav::before {
+#edu-nav::before {
 	content: "EDUCATION";
 	font-size: 5pt;
 }
 
-.exp-nav::before {
+#exp-nav::before {
 	content: "EXPERIENCE";
 	font-size: 4.5pt;
 }
 
 .selected {
-	color: #b18cec;
+	color: #b18cec !important;
 }
 
 .timeline {
@@ -577,6 +591,11 @@ nav {
 
 .edu-detail {
 	margin-bottom: 1rem;
+}
+
+.edu-detail, 
+.exp-detail {
+	display: none;
 }
 
 .edu-detail ul,
@@ -674,26 +693,26 @@ nav {
 		flex-direction: row;
 	}
 
-	.edu-nav,
-	.exp-nav {
+	#edu-nav,
+	#exp-nav {
 		padding-right: 1rem;
 		line-height: normal;
 		padding-left: 1.5rem;
 		max-width: 20%;
 	}
 
-	.edu-nav::before {
+	#edu-nav::before {
 		max-height: 137px;
 		font-size: 7pt;
 	}
 
-	.exp-nav::before {
+	#exp-nav::before {
 		max-height: 117px;
 		font-size: 6pt;
 	}
 
-	.edu-nav > li, 
-	.exp-nav > li {
+	#edu-nav > li, 
+	#exp-nav > li {
 		padding-bottom: 15px;
 		padding-left: 10px;
 	}
@@ -735,7 +754,7 @@ nav {
 }
 
 #projectstitle {
-	width: 70%;
+	min-width: 80%;
 }
 
 #projectstitle::after {
@@ -749,23 +768,18 @@ nav {
 }
 
 .filter-button {
-	border: none;
-	outline: none;
-	padding: 12px 16px;
-	background-color: #f1f1f1;
-	cursor: pointer;
-	border-radius: 4px;
-	margin: 4px;
 	transition: 0.3s;
+	background: none;
 }
 
 .filter-button:hover {
-	background-color: #ddd;
+	background-color: #3a3a3a;
 }
 
 .filter-button.active {
-	background-color: #474d5a;
-	color: white;
+	background-color: #f7f4e9;
+	border-color: #f7f4e9;
+	color: #b18cec;
 }
 
 .proj-cards {
@@ -845,24 +859,48 @@ nav {
 	opacity: 1;
 }
 
-/**Footer**/
+/** Contact/Footer **/
 
-#footer {
-	height: 6em;
-	width: 100%;
-	text-align: center;
+#contact-section {
+	min-height: calc(100vh - 3em);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
-#social-container * {
+#contacttitle {
+	min-width: 100%;
+}
+
+#contacttitle::after {
+	min-width: calc(100% - 140px);
+}
+
+#footer {
+	height: 3em;
+	width: 100%;
+	text-align: center;
+	font-size: 14pt;
+}
+
+#copyright-container * {
 	padding: 6px;
 	margin-bottom: 6px;
 }
 
-#social-container a {
+#copyright-container a, 
+#copyright-container i {
 	color: #f7f4e9;
 	transition: .4s;
 }
 
-#social-container a:hover {
-	color: #ffffff;
+#copyright-container a:hover {
+	color: #b18cec;
+}
+
+@media (max-width: 35em) {
+	.contact-wrap {
+		max-width: 80%;
+	}
 }
