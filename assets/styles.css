@@ -349,6 +349,14 @@ nav {
 #portrait {
 	margin-top: 1rem;
 	width: 75%;
+	height: auto;
+}
+
+@media (min-width: 1600px) {
+	#portrait {
+		height: 75%;
+		width: auto;
+	}
 }
 
 .description {

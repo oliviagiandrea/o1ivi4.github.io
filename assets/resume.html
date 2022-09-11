@@ -16,15 +16,24 @@
 
     <style>
       @media print {
+        @page {
+          size: A4 portrait;
+          margin: 0.5cm;
+        }
+
+        ::-webkit-scrollbar {
+          display: none;
+        }
+
         #head-section,
         #edu-section, 
         #skills-section,
         #exp-section,
         #comm-section {
-          width: 95% !important;
+          width: 100%;
         }
       }
-
+      
       body {
         scroll-behavior: smooth;
         font-style: normal;
@@ -33,6 +42,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        page-break-after:avoid;
+        margin: auto;
       }
 
       h1 {
@@ -72,7 +83,7 @@
       #skills-section,
       #exp-section,
       #comm-section {
-        width: 60%;
+        width: 90%;
         margin-bottom: 0.5rem;
       }
 
@@ -80,6 +91,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+
+      #skills-section {
+        margin-bottom: 2rem;
       }
 
       .links {
@@ -102,7 +117,7 @@
       }
 
       .bullet {
-        margin-bottom: 4px;
+        margin-bottom: 5px;
       }
 
       ul {
@@ -128,9 +143,9 @@
         <div class="links">
           <a href="mailto:olivia.giandrea@gmail.com">olivia.giandrea@gmail.com</a>
           <p>&nbsp;&nbsp;∙&nbsp;&nbsp;</p> 
-          <a href="https://o1ivi4.github.io/">o1ivi4.github.io</a>
+          <a href="https://www.olivi4.com/" target="_blank">www.o1ivi4.com</a>
           <p>&nbsp;&nbsp;∙&nbsp;&nbsp;</p> 
-          <a href="https://www.linkedin.com/in/oliviagiandrea">linkedin.com/in/oliviagiandrea</a>
+          <a href="https://www.linkedin.com/in/oliviagiandrea" target="_blank">linkedin.com/in/oliviagiandrea</a>
         </div>
       </div>
 
@@ -183,6 +198,121 @@
         </div>
       </div>
 
+      <div id="exp-section">
+        <h2>Experience</h2>
+          <div class="bullet" style="margin-top: 5px;">
+            <div class="subtitle">
+              <b>Software Engineer Intern | Momentive.ai</b>
+              <i>Summer 2022</i>
+            </div>
+            <ul>
+              <li>
+                Managed company website content with HTML, CSS, and 
+                JS (React) on the Content Engineering team. 
+              </li>
+              <li>
+                Completed and pushed 7 projects to main branch in 9 
+                weeks of work, changing &gt;1300 lines of code.
+              </li>
+              <li>
+                Coordinated efforts between three teams to translate, 
+                localize, upload, and merge site content to main in 
+                &lt;24 hours, maintaining brand consistency across 
+                languages and locales. 
+              </li>
+              <li>
+                Implemented controls for 3 Storybook components with 
+                React, enabling users to change component attributes, 
+                thus supporting future debugging, brand consistency, 
+                and component documentation. 
+              </li>
+              <li>
+                Activated 2 A/B experiments on site content 
+                variations with React, resulting in a 400% increase 
+                of SQLs. 
+              </li>
+            </ul>
+          </div>
+          <div class="bullet">
+            <div class="subtitle">
+              <b>CS Tutor | Wellesley College</b>
+              <i>Sep 2021 - Present</i>
+            </div>
+            <ul>
+              <li>
+                Taught students Python and problem solving fundamentals 
+                (CS 111) and HTML/CSS/front-end design fundamentals 
+                (CS 220) in weekly shadowed lab sections/lectures and 
+                office hours to groups of 1-50 students. 
+              </li>
+            </ul>
+          </div>
+          <div class="bullet">
+            <div class="subtitle">
+              <b>Software Systems Developer Intern | Enercon Technologies</b>
+              <i>Dec 2020 - June 2021</i>
+            </div>
+            <ul>
+              <li>
+                Redesigned and redeveloped company intranet site with a 
+                modernized framework using HTML, CSS, JavaScript, C#, 
+                SQL stored procedures, and integrated third-party SDKs 
+                to increase floor productivity. 
+              </li><li>
+                Built a "bulletin board" application interface for HR 
+                employees to easily upload and display content, such 
+                as company announcements, weekly/daily completed build 
+                statistics, and safety information. 
+              </li><li>
+                Automated validation of manufacturing software, reducing 
+                5 weeks of labor to under 23 minutes. 
+              </li><li>
+                Updated legacy apps by translating functions from VB6 to 
+                Windows Forms (C#). 
+              </li><li>
+                Created a variety of Windows Forms (C#, SQL stored 
+                procedures) to offer employees easier methods of 
+                interacting with data. 
+              </li><li>
+                Collaborated with 3 other developers to automate processes 
+                and maintain company infrastructure using SQL stored 
+                procedures, APIs, and custom applications (C# or HTML, 
+                CSS, JavaScript). 
+              </li><li>
+                Documented system modifications with Github/BitBucket to 
+                maintain source control.               
+              </li>
+            </ul>
+          </div>
+          <div class="bullet">
+            <div class="subtitle">
+              <b>Material & Inventory Specialist | Enercon Technologies</b>
+              <i>Mar - Aug 2020</i>
+            </div>
+          </div>
+          <div class="bullet">
+            <div class="subtitle">
+              <b>Waitress | Stone's Café, Market & Bakery </b>
+              <i>May 2017 - Aug 2020</i>
+            </div>
+          </div>
+      </div>
+
+      <div id="comm-section">
+        <h2>Community/Campus Involvement</h2>
+        <div class="bullet" style="margin-top: 5px;">
+          <div class="subtitle">
+            <b>Web Developer | Wellesley Hackathon (WHACK)</b>
+            <i>May 2022 - Present</i>
+          </div>
+          <ul>
+            <li>
+              Developed and maintained Wellesley College's <a href="https://wellesleyhacks.org/">official 2022 hackathon webpage</a>. 
+            </li>
+          </ul>
+        </li>
+      </div>
+
       <div id="skills-section">
         <h2>Skills</h2>
         <ul style="margin-top: 5px;">
@@ -208,82 +338,6 @@
             Organization, time management, adaptability, written communication
           </li>
         </ul>
-      </div>
-
-      <div id="exp-section">
-        <h2>Experience</h2>
-          <div class="bullet" style="margin-top: 5px;">
-            <div class="subtitle">
-              <b>Software Engineer Intern | Momentive.ai</b>
-              <i>June 2022 - Present</i>
-            </div>
-            <ul>
-              <li>
-                Worked on the Content Engineering Team to build tools and technologies with HTML, CSS, and Javascript (React) to manage content on company websites. 
-              </li>
-            </ul>
-          </div>
-          <div class="bullet">
-            <div class="subtitle">
-              <b>CS Tutor | Wellesley College</b>
-              <i>Sep 2021 - Present</i>
-            </div>
-            <ul>
-              <li>
-                Taught students Python and problem solving fundamentals (CS 111) and HTML/CSS/front-end design fundamentals (CS 220) in weekly shadowed lab sections/lectures and independent office hours by explaining concepts, guiding debugging processes, and clarifying questions. 
-              </li>
-            </ul>
-          </div>
-          <div class="bullet">
-            <div class="subtitle">
-              <b>Software Systems Developer Intern | Enercon Technologies</b>
-              <i>Dec 2020 - June 2021</i>
-            </div>
-            <ul>
-              <li>
-                Redesigned and redeveloped company intranet site with a modernized framework using HTML, CSS, JavaScript, C#, SQL stored procedures, and integrated third-party SDKs to increase floor productivity. 
-              </li><li>
-                Built a "bulletin board" application interface for HR employees to easily upload and display content, such as company announcements, weekly/daily completed build statistics, and safety information. 
-              </li><li>
-                Automated validation of manufacturing software, reducing 5 weeks of labor to under 23 minutes. 
-              </li><li>
-                Updated legacy apps by translating functions from VB6 to Windows Forms (C#). 
-              </li><li>
-                Created a variety of Windows Forms (C#, SQL stored procedures) to offer employees easier methods of interacting with data. 
-              </li><li>
-                Collaborated with 3 other developers to automate processes and maintain company infrastructure using SQL stored procedures, APIs, and custom applications (C# or HTML, CSS, JavaScript). 
-              </li><li>
-                Documented system modifications with Github/BitBucket to maintain source control.               
-              </li>
-            </ul>
-          </div>
-          <div class="bullet">
-            <div class="subtitle">
-              <b>Material & Inventory Specialist | Enercon Technologies</b>
-              <i>Mar - Aug 2020</i>
-            </div>
-          </div>
-          <div class="bullet">
-            <div class="subtitle">
-              <b>Waitress | Stone's Café, Market & Bakery </b>
-              <i>May 2017 - Aug 2020</i>
-            </div>
-          </div>
-      </div>
-
-      <div id="comm-section" style="margin-bottom: 3rem;">
-        <h2>Community/Campus Involvement</h2>
-        <div class="bullet" style="margin-top: 5px;">
-          <div class="subtitle">
-            <b>Web Developer | Wellesley Hackathon (WHACK)</b>
-            <i>May 2022 - Present</i>
-          </div>
-          <ul>
-            <li>
-              Developed and maintained Wellesley College's <a href="https://wellesleyhacks.org/">official 2022 hackathon webpage</a>. 
-            </li>
-          </ul>
-        </li>
       </div>
     </div>    
 	</body>
