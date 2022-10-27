@@ -366,7 +366,7 @@ nav {
 
 /**About**/
 
-#about-section {
+#about {
 	min-height:100vh;
 	display: flex;
 	align-items: center;
@@ -438,7 +438,7 @@ nav {
 	left: 20%;
 }
 
-#about-section hr {
+#about hr {
 	display: none;
 }
 
@@ -471,7 +471,7 @@ nav {
 		text-align: center;
 	}
 
-	#about-section hr {
+	#about hr {
 		display: block;
 		border: 1px solid #b18cec;
 		height: 0.1px;
@@ -513,7 +513,7 @@ nav {
 
 /**Education**/
 
-#edu-section {
+#experience {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -757,7 +757,7 @@ nav {
 
 /**Projects**/
 
-#project-section {
+#projects {
 	min-height:100vh;
 	display: flex;
 	align-items: center;
@@ -880,8 +880,9 @@ nav {
 
 /** Contact/Footer **/
 
-#contact-section {
-	min-height: calc(100vh - 3em);
+#contact {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -925,9 +926,5 @@ nav {
 
 	#copyright-container {
 		margin-bottom: 3rem;
-	}
-
-	#contact-section {
-		min-height: calc(100vh - 6em);
 	}
 }
