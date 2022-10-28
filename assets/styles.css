@@ -9,14 +9,14 @@ body, html{
 	margin: 0 !important;
   padding: 0 !important;
 	overflow: hidden;
-	font-size: 10pt;
+	font-size: 1rem;
 }
 
 h1 {
 	font-family: 'Abel', sans-serif;	
 	font-weight: 300;
 	font-style: normal;
-	font-size: 175%;
+	font-size: 2rem;
 	margin: 0;
 	padding: 0;
 }
@@ -102,11 +102,11 @@ a {
 
 .title {
 	max-width: 100%;
-	font-size: 250%;
+	font-size: 2rem;
 }
 
 .subtitle {
-	font-size: 175%;
+	font-size: 1.5rem;
 	margin: 0 0 2rem 0;
 	position: relative;
 	padding: 0;
@@ -343,7 +343,7 @@ nav {
 }
 
 #app {
-	font-size: 150%;
+	font-size: 1.5%;
 }
 
 #portrait {
@@ -360,7 +360,7 @@ nav {
 }
 
 .description {
-	font-size: 12pt;
+	font-size: 1rem;
 }
 
 
@@ -556,7 +556,7 @@ nav {
 	vertical-align: middle;
 	flex-direction: column;
 	font-family: 'Abel', sans-serif;
-	font-size: 12pt;
+	font-size: 1rem;
 }
 
 #edu-nav li, 
@@ -590,12 +590,12 @@ nav {
 
 #edu-nav::before {
 	content: "EDUCATION";
-	font-size: 5pt;
+	font-size: 0.5rem;
 }
 
 #exp-nav::before {
 	content: "EXPERIENCE";
-	font-size: 4.5pt;
+	font-size: 0.5rem;
 }
 
 .selected {
@@ -722,12 +722,12 @@ nav {
 
 	#edu-nav::before {
 		max-height: 137px;
-		font-size: 7pt;
+		font-size: 0.7rem;
 	}
 
 	#exp-nav::before {
 		max-height: 117px;
-		font-size: 6pt;
+		font-size: 0.5rem;
 	}
 
 	#edu-nav > li, 
@@ -871,7 +871,7 @@ nav {
 }
 
 .img-description i {
-	font-size: 10pt;
+	font-size: 0.8rem;
 }
 
 .img-description:hover {
@@ -901,7 +901,7 @@ nav {
 	height: 3em;
 	width: 100%;
 	text-align: center;
-	font-size: 14pt;
+	font-size: 1.2rem;
 }
 
 #copyright-container * {
