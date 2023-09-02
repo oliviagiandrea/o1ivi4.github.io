@@ -13,7 +13,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
-	<!-- load fontawesome icons! :D -->
 	<script src="https://kit.fontawesome.com/4266217451.js" crossorigin="anonymous"></script>
 	<title>Olivia Giandrea</title>
 </head>
@@ -24,7 +23,6 @@
 		<a href="#about">
 			<img src="assets/img/logo.svg" alt="Navbar Star Logo" class="logo" />
 		</a>
-		<!-- "menu" is read by screen reader, won't be seen by user -->
 		<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
 			<span class="sr-only">Menu</span>
 		</button>
@@ -64,7 +62,7 @@
 						<h1 class="title">OLIVIA GIANDREA</h1>
 						<img src="assets/img/portrait.svg" alt="Self-Portrait Drawing" id="portrait"><br />
 						<div class="description">
-							<p>Software Engineer at Momentive.ai</p><br />
+							<p>Software Engineer at SurveyMonkey</p><br />
 						</div>
 						<a href="#about" class="button">LEARN MORE</a>
 					</div>
@@ -81,11 +79,9 @@
 						<p id="about-p">
 							Hello!
 							<br /><br />
-							I'm a graduate of <span class="blue">Wellesley College</span>, with a major in Computer Science and a
-							minor in Japanese. In my free time, I enjoy baking, stargazing, and hiking.
+							I'm a software engineer at <span class="green">SurveyMonkey</span>, and I'm currently pursuing my MS in Computer Science at <span class="blue">Northeastern's Roux Institute</span>. 
 							<br /><br />
-							I specialize in <span class="purple">fullstack web development</span>, and I'm excited to be joining <span
-								class="yellow">Momentive.ai</span> as a Software Engineer this summer.
+							I specialize in <span class="purple">fullstack web development</span>, and in my free time, I enjoy baking, sewing, stargazing, and hiking.
 							<br /><br />
 							Thanks for stopping by!
 						</p>
@@ -105,11 +101,18 @@
 					<h2>EDUCATION</h2>
 					<div class="edu-wrap">
 						<ul id="edu-nav">
-							<li class="edubtn edu1 selected" tabindex="0" onclick="filterEdu('edu1')">WELLESLEY COLLEGE</li>
-							<li class="edubtn edu2" tabindex="0" onclick="filterEdu('edu2')">MIDDLEBURY COLLEGE</li>
-							<li class="edubtn edu3" tabindex="0" onclick="filterEdu('edu3')">HIGH SCHOOL</li>
+							<li class="edu_btn edu1 selected" tabindex="0" onclick="filterEdu('edu1')">NORTHEASTERN UNIVERSITY</li>
+							<li class="edu_btn edu2" tabindex="0" onclick="filterEdu('edu2')">WELLESLEY COLLEGE</li>
+							<li class="edu_btn edu2" tabindex="0" onclick="filterEdu('edu3')">MIDDLEBURY COLLEGE</li>
+							<li class="edu_btn edu3" tabindex="0" onclick="filterEdu('edu4')">HIGH SCHOOL</li>
 						</ul>
 						<div class="edu-detail edu1 show">
+							<p>M.S. Computer Science
+								<span class="purple">&#8674; Northeastern University (Roux Institute)</span>
+							</p>
+							<p class="timeline">Sep 2023 - Apr 2025</p>
+						</div>
+						<div class="edu-detail edu2">
 							<p>B.A. Computer Science
 								<span class="purple">&#8674; Wellesley College</span>,
 								<span class="red">MIT</span>,
@@ -138,7 +141,7 @@
 								</ul>
 							</ul>
 						</div>
-						<div class="edu-detail edu2">
+						<div class="edu-detail edu3">
 							<p>Summer School of Japanese
 								<span class="purple">&#8674; Middlebury College</span>
 							</p>
@@ -147,7 +150,7 @@
 								<li>GPA: 4.0</li>
 							</ul>
 						</div>
-						<div class="edu-detail edu3">
+						<div class="edu-detail edu4">
 							<p><span class="purple">Greely High School</span></p>
 							<p class="timeline">Aug 2016 - June 2020</p>
 							<ul>
@@ -159,43 +162,16 @@
 					<h2>EXPERIENCE</h2>
 					<div class="exp-wrap">
 						<ul id="exp-nav">
-							<li class="expbtn exp1 selected" tabindex="0" onclick="filterExp('exp1')">FREELANCE</li>
-							<li class="expbtn exp2" tabindex="0" onclick="filterExp('exp2')">WELLESLEY COLLEGE</li>
-							<li class="expbtn exp3" tabindex="0" onclick="filterExp('exp3')">MOMENTIVE.AI</li>
-							<li class="expbtn exp4" tabindex="0" onclick="filterExp('exp4')">ENERCON TECHNOLOGIES</li>
+							<li class="exp_btn exp1 selected" tabindex="0" onclick="filterExp('exp1')">SURVEYMONKEY</li>
+							<li class="exp_btn exp2" tabindex="0" onclick="filterExp('exp2')">FREELANCE</li>
+							<li class="exp_btn exp3" tabindex="0" onclick="filterExp('exp3')">WELLESLEY COLLEGE</li>
+							<li class="exp_btn exp4" tabindex="0" onclick="filterExp('exp4')">ENERCON TECHNOLOGIES</li>
 						</ul>
 						<div class="exp-detail exp1 show">
-							<p>Freelance Web Developer</p>
+							<p>Software Engineer I</p>
 							<p class="timeline">
-								Aug 2022 - Present<br />
+								Jun 2023 - Present<br />
 							</p>
-							<ul>
-								<li>
-									Designed and developed websites for clients including Wellesley's CRED Lab, Wellesley's CS department,
-									professors, fellow students, community members, and local small businesses.
-								</li>
-							</ul>
-						</div>
-						<div class="exp-detail exp2">
-							<p>CS Department Teaching Assistant
-								<span class="purple">&#8674; Wellesley College</span>
-							</p>
-							<p class="timeline">
-								Sept 2021 - Present<br />
-							</p>
-							<ul>
-								<li>
-									Collaborated with Professor Scott Anderson to modernize CS304: Databases with Web Interfaces using the
-									MERN stack, then TA'ed for the revised course in spring semester 2023.
-								</li>
-								<li>
-									Instructed students in Python and problem-solving fundamentals (CS 111), front-end design/development
-									(CS 220), and full-stack development/database administration (CS304) through weekly lab sections,
-									lectures, and office hours for groups of up to 50 students.
-								</li>
-							</ul>
-						</div>
-						<div class="exp-detail exp3">
 							<p>Software Engineer Intern
 								<span class="purple">&#8674; Momentive.ai</span>
 							</p>
@@ -218,6 +194,37 @@
 								</li>
 								<li>
 									Achieved 400% increase in SQLs via 2 A/B experiments on site content variations.
+								</li>
+							</ul>
+						</div>
+						<div class="exp-detail exp2">
+							<p>Freelance Web Developer</p>
+							<p class="timeline">
+								Aug 2022 - Present<br />
+							</p>
+							<ul>
+								<li>
+									Designed and developed websites for clients including Wellesley's CRED Lab, Wellesley's CS department,
+									professors, fellow students, community members, and local small businesses.
+								</li>
+							</ul>
+						</div>
+						<div class="exp-detail exp3">
+							<p>CS Department Teaching Assistant
+								<span class="purple">&#8674; Wellesley College</span>
+							</p>
+							<p class="timeline">
+								Sept 2021 - Present<br />
+							</p>
+							<ul>
+								<li>
+									Collaborated with Professor Scott Anderson to modernize CS304: Databases with Web Interfaces using the
+									MERN stack, then TA'ed for the revised course in spring semester 2023.
+								</li>
+								<li>
+									Instructed students in Python and problem-solving fundamentals (CS 111), front-end design/development
+									(CS 220), and full-stack development/database administration (CS304) through weekly lab sections,
+									lectures, and office hours for groups of up to 50 students.
 								</li>
 							</ul>
 						</div>
@@ -396,18 +403,6 @@
 					<a href="https://www.linkedin.com/in/oliviagiandrea/" target="_blank" class="button">LINKEDIN</a>
 					<a href="https://github.com/oliviagiandrea/" target="_blank" class="button">GITHUB</a>
 				</div>
-			</div>
-		</section>
-
-		<!--Footer/Contact-->
-		<section class="container column" id="footer">
-			<div class="container row" id="copyright-container">
-				<a href="https://github.com/o1iviagiandrea/o1iviagiandrea.github.io" target="_blank" id="copyright">
-					<i class="fa-solid fa-pen-ruler"></i>,
-					<i class="fa-solid fa-code"></i>, and
-					<i class="fa-solid fa-rocket"></i>
-					by Olivia Giandrea
-				</a>
 			</div>
 		</section>
 	</div>

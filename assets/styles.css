@@ -533,6 +533,9 @@ nav {
 	flex-direction: column;
 	font-family: 'Abel', sans-serif;
 	font-size: 1rem;
+	border-left: 3px dotted #f7f4e9;
+	padding-inline-start: 1rem;
+	margin-block-start: 0rem;
 }
 
 #edu-nav li, 
@@ -546,32 +549,6 @@ nav {
 #exp-nav li:focus {
 	cursor: pointer;
 	color: #f7f4e9;
-}
-
-#edu-nav::before,
-#exp-nav::before {
-	position: absolute;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	border-right: 3px dotted;
-	writing-mode: vertical-lr;
-	text-orientation: upright;
-	letter-spacing: 0px;
-	display: flex;
-  align-items: center;
-	border-spacing: 10px;
-}
-
-#edu-nav::before {
-	content: "EDUCATION";
-	font-size: 0.5rem;
-}
-
-#exp-nav::before {
-	content: "EXPERIENCE";
-	font-size: 0.5rem;
 }
 
 .selected {
@@ -631,6 +608,7 @@ nav {
 	border-radius: 10px;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	margin-bottom: 1rem;
 }
 
 .skills-group h3 {
@@ -666,7 +644,6 @@ nav {
 	.edu-detail li,
 	.exp-detail li {
 		margin-left: 0.75rem;
-		padding-left: 0.25rem;
 	}
 }
 
@@ -680,24 +657,12 @@ nav {
 	#exp-nav {
 		padding-right: 1rem;
 		line-height: normal;
-		padding-left: 1.5rem;
 		max-width: 20%;
-	}
-
-	#edu-nav::before {
-		max-height: 137px;
-		font-size: 0.7rem;
-	}
-
-	#exp-nav::before {
-		max-height: 117px;
-		font-size: 0.5rem;
 	}
 
 	#edu-nav > li, 
 	#exp-nav > li {
 		padding-bottom: 15px;
-		padding-left: 10px;
 	}
 
 	.edu-detail, 
@@ -858,36 +823,4 @@ nav {
 
 #contact-title::after {
 	min-width: calc(100% - 140px);
-}
-
-#footer {
-	height: 3em;
-	width: 100%;
-	text-align: center;
-	font-size: 1.2rem;
-}
-
-#copyright-container * {
-	padding: 6px;
-	margin-bottom: 6px;
-}
-
-#copyright-container a, 
-#copyright-container i {
-	color: #f7f4e9;
-	transition: .4s;
-}
-
-#copyright-container a:hover {
-	color: #b18cec;
-}
-
-@media (max-width: 35em) {
-	.contact-wrap {
-		max-width: 80%;
-	}
-
-	#copyright-container {
-		margin-bottom: 3rem;
-	}
 }

@@ -64,20 +64,20 @@ function filterExp(c) {
 };
 
 // add selected class to current edu/exp link
-var edubtns = document.getElementsByClassName("edubtn");
-for (var i = 0; i < edubtns.length; i++) {
-  edubtns[i].addEventListener("click", function(){
-    for (var j = 0; j < edubtns.length; j++) {
-      removeClass(edubtns[j], "selected");
+var edu_btns = document.getElementsByClassName("edu_btn");
+for (var i = 0; i < edu_btns.length; i++) {
+  edu_btns[i].addEventListener("click", function(){
+    for (var j = 0; j < edu_btns.length; j++) {
+      removeClass(edu_btns[j], "selected");
     };
     this.className += " selected";
   });
 };
-var expbtns = document.getElementsByClassName("expbtn");
-for (var i = 0; i < expbtns.length; i++) {
-  expbtns[i].addEventListener("click", function(){
-    for (var j = 0; j < expbtns.length; j++) {
-      removeClass(expbtns[j], "selected");
+var exp_btns = document.getElementsByClassName("exp_btn");
+for (var i = 0; i < exp_btns.length; i++) {
+  exp_btns[i].addEventListener("click", function(){
+    for (var j = 0; j < exp_btns.length; j++) {
+      removeClass(exp_btns[j], "selected");
     };
     this.className += " selected";
   });
@@ -86,12 +86,12 @@ for (var i = 0; i < expbtns.length; i++) {
 // filter buttons for proj section
 filterSelection("all");
 function filterSelection(c) {
-  var projs, i;
-  projs = document.getElementsByClassName("proj-card");
+  var projects, i;
+  projects = document.getElementsByClassName("proj-card");
   if (c == "all") c = "";
-  for (i = 0; i < projs.length; i++) {
-    removeClass(projs[i], "show");
-    if (projs[i].className.indexOf(c) > -1) addClass(projs[i], "show");
+  for (i = 0; i < projects.length; i++) {
+    removeClass(projects[i], "show");
+    if (projects[i].className.indexOf(c) > -1) addClass(projects[i], "show");
   };
 };
 
@@ -106,22 +106,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 };
-
-// change color of icons with text on hover in footer
-var container = document.getElementById("copyright-container");
-
-var copyright = document.getElementById("copyright");
-var icons = container.getElementsByClassName("fa-solid");
-
-copyright.addEventListener("mouseover", function() {
-  copyright.style.setProperty("color", "#b18cec");
-  for (var i = 0; i < icons.length; i++) {
-    icons[i].style.setProperty("color", "#b18cec");
-  };
-});
-copyright.addEventListener("mouseleave", function() {
-  copyright.style.setProperty("color", "#f7f4e9");
-  for (var i = 0; i < icons.length; i++) {
-    icons[i].style.setProperty("color", "#f7f4e9");
-  };
-});
